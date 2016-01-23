@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>README</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(170, 187, 195); overflow: auto; background-color: rgb(38, 50, 56); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(122, 149, 161); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(77, 182, 172); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(122, 149, 161); border-color: rgb(71, 93, 105); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(71, 93, 105); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(71, 93, 105); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(54, 72, 80); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(46, 61, 68); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(71, 93, 105) rgb(71, 93, 105) rgb(59, 77, 86); background-color: rgb(54, 72, 80); }
+.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.markdown-preview { color: rgba(170, 187, 195, 0.8); background-color: rgb(42, 55, 62); }
+.markdown-preview code { color: rgba(170, 187, 195, 0.8); background-color: rgb(46, 61, 68); }
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3 { border-color: rgba(170, 187, 195, 0.0980392); }
+.markdown-preview table tr { border-color: rgb(59, 77, 86); background: none; }
+.markdown-preview table tr:nth-child(2n) { background-color: rgb(46, 61, 68); }
+.markdown-preview table th, .markdown-preview table td { border-color: rgb(59, 77, 86); }
+.markdown-preview table th { background-color: rgb(54, 72, 80); }
+html.blue .markdown-preview a { color: rgb(33, 150, 243); }
+html.cyan .markdown-preview a { color: rgb(0, 188, 212); }
+html.green .markdown-preview a { color: rgb(139, 195, 74); }
+html.pink .markdown-preview a { color: rgb(233, 30, 99); }
+html.purple .markdown-preview a { color: rgb(130, 89, 203); }
+html.red .markdown-preview a { color: rgb(244, 67, 54); }
+html.teal .markdown-preview a { color: rgb(77, 182, 172); }
+html.white .markdown-preview a { color: rgb(196, 196, 196); }
+html.yellow .markdown-preview a { color: rgb(255, 235, 59); }
+html.orange .markdown-preview a { color: rgb(255, 152, 0); }
+.gutter .line-number {
+  background-size: 0px;
+  transition: background-size 0.5s;
+}
+.gutter .line-number.quickfix {
+  background-image: url(atom://atom-typescript/images/light-bulb.png);
+  background-size: 16.66666667px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+
+pre.editor-colors,
+.host {
+  background-color: #263238;
+  color: #aabbc3;
+}
+pre.editor-colors .gutter,
+.host .gutter {
+  background-color: #263238;
+  color: #49656f;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  background-color: rgba(0, 0, 0, 0.19);
+  color: #cdd3de;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  color: #cdd3de;
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  color: #2b3940;
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: #2b3940;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: #304047;
+}
+pre.editor-colors .search-results .marker .region,
+.host .search-results .marker .region {
+  background-color: transparent;
+  border: #65737e;
+}
+pre.editor-colors .search-results .marker.current-result .region,
+.host .search-results .marker.current-result .region {
+  border: #cdd3de;
+}
+pre.editor-colors.is-focused .cursor,
+.host(.is-focused) .cursor {
+  border-color: #4db6ac;
+  border-width: 2px;
+}
+pre.editor-colors.is-focused .selection .region,
+.host(.is-focused) .selection .region {
+  background-color: rgba(128, 203, 196, 0.13);
+}
+pre.editor-colors.is-focused .line-number.cursor-line-no-selection,
+pre.editor-colors.is-focused .line.cursor-line,
+.host(.is-focused) .line-number.cursor-line-no-selection,
+.host(.is-focused) .line.cursor-line {
+  background-color: rgba(0, 0, 0, 0.19);
+}
+.variable.parameter.function {
+  color: #eeffff;
+}
+.comment,
+.punctuation.definition.comment {
+  color: #49656f;
+}
+.punctuation.definition.string,
+.punctuation.definition.variable,
+.punctuation.definition.string,
+.punctuation.definition.parameters,
+.punctuation.definition.string,
+.punctuation.definition.array {
+  color: #d9f5dd;
+}
+.none {
+  color: #d9f5dd;
+}
+.keyword.operator {
+  color: #d9f5dd;
+}
+.keyword {
+  color: #ae94dd;
+}
+.variable {
+  color: #ed5866;
+}
+.variable .punctuation.definition.variable {
+  color: inherit;
+}
+.entity.name.function,
+.meta.require,
+.support.function.any-method,
+.meta.function-call,
+.support.function,
+.keyword.other.special-method,
+.meta.block-level {
+  color: #82b1ff;
+}
+.support.class,
+.entity.name.class,
+.entity.name.type.class {
+  color: #f4cf5f;
+}
+.meta.class {
+  color: #fff;
+}
+.keyword.other.special-method {
+  color: #82b1ff;
+}
+.storage {
+  color: #ae94dd;
+}
+.support.function,
+.keyword.operator,
+.constant.other.color,
+.meta.tag,
+.punctuation.definition.tag,
+.punctuation.separator.inheritance.php,
+.punctuation.definition.tag.html,
+.punctuation.definition.tag.begin.html,
+.punctuation.definition.tag.end.html {
+  color: #80cbc4;
+}
+.string,
+.constant.other.symbol,
+.entity.other.inherited-class {
+  color: #c3e88d;
+}
+.constant.numeric {
+  color: #ee6f65;
+}
+.none {
+  color: #ee6f65;
+}
+.none {
+  color: #ee6f65;
+}
+.constant {
+  color: #ee6f65;
+}
+.entity.name.tag {
+  color: #ed5866;
+}
+.entity.other.attribute-name {
+  color: #c3e88d;
+}
+.entity.other.attribute-name.class.css {
+  color: #FFC55C;
+}
+.entity.other.attribute-name.class.css .punctuation.entity {
+  color: #FFC55C;
+}
+.entity.other.attribute-name.id {
+  color: #fad430;
+}
+.entity.other.attribute-name.id .punctuation.entity {
+  color: #fad430;
+}
+.entity.other.attribute-name .punctuation.entity {
+  color: #ae94dd;
+}
+.meta.selector {
+  color: #ae94dd;
+}
+.none {
+  color: #ee6f65;
+}
+.markup.heading .punctuation.definition.heading,
+.entity.name.section {
+  color: #75cbf2;
+}
+.keyword.other.unit {
+  color: #ee6f65;
+}
+.markup.bold,
+.punctuation.definition.bold {
+  font-weight: bold;
+  color: #f4cf5f;
+}
+.markup.italic,
+.punctuation.definition.italic {
+  font-style: italic;
+  color: #ae94dd;
+}
+.markup.raw.inline,
+.markup.raw {
+  color: #f1e655;
+}
+.string.other.link,
+.punctuation.definition.string.end.markdown {
+  color: #ff5370;
+}
+[data-grammar*="gfm"]::shadow .markup.underline.link {
+  color: #ff869a;
+}
+[data-grammar*="gfm"]::shadow .markup.underline.link span.punctuation {
+  color: #ff5370;
+}
+[data-grammar*="gfm"]::shadow .markup.strike {
+  position: relative;
+  color: rgba(170, 187, 195, 0.5);
+}
+[data-grammar*="gfm"]::shadow .markup.strike::after {
+  content: "";
+  position: absolute;
+  top: calc(54%);
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(170, 187, 195, 0.2);
+}
+[data-grammar*="gfm"]::shadow .table .border {
+  color: rgba(170, 187, 195, 0.5);
+}
+[data-grammar*="gfm"]::shadow .markup.heading {
+  color: #82b1ff;
+}
+[data-grammar*="gfm"]::shadow .punctuation.definition.begin,
+[data-grammar*="gfm"]::shadow .punctuation.definition.end {
+  color: #82b1ff;
+}
+[data-grammar*="gfm"]::shadow .punctuation.definition.begin + span:not(.function.parameter) {
+  color: #9cc1ff;
+}
+.meta.link {
+  color: #ee6f65;
+}
+.markup.list {
+  color: #ed5866;
+}
+.markup.quote {
+  color: #ee6f65;
+}
+.meta.separator {
+  color: #d9f5dd;
+  background-color: #1e3445;
+}
+.markup.inserted {
+  color: #f1e655;
+}
+.markup.deleted {
+  color: #ed5866;
+}
+.markup.changed {
+  color: #ae94dd;
+}
+.constant.other.color,
+.meta.property-value .support.constant.named-color.css {
+  color: #ffeb95;
+}
+.string.regexp {
+  color: #80cbc4;
+}
+.constant.character.escape {
+  color: #80cbc4;
+}
+.punctuation.section.embedded,
+.variable.interpolation {
+  color: #d3423e;
+}
+.invalid.illegal {
+  color: #ffffff;
+  background-color: #ec5f67;
+}
+.invalid.broken {
+  color: #020e14;
+  background-color: #ee6f65;
+}
+.invalid.deprecated {
+  color: #ffffff;
+  background-color: #d3423e;
+}
+.invalid.unimplemented {
+  color: #ffffff;
+  background-color: #8bd649;
+}
+.sublimelinter.annotations {
+  color: #7b5157;
+  background-color: #fffff7;
+}
+.sublimelinter.outline.illegal {
+  color: #ffffff;
+  background-color: #ff9599;
+}
+.sublimelinter.underline.illegal {
+  background-color: #ff4941;
+}
+.sublimelinter.outline.warning {
+  color: #ffffff;
+  background-color: #ffcf1b;
+}
+.sublimelinter.underline.warning {
+  background-color: #ff4941;
+}
+.sublimelinter.outline.violation {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.sublimelinter.underline.violation {
+  background-color: #ff4941;
+}
+.sublimelinter.mark.error {
+  color: #ff572d;
+}
+.sublimelinter.mark.warning {
+  color: #ffcf1b;
+}
+.sublimelinter.gutter-mark {
+  color: #ffffff;
+}
+.markup.deleted.git_gutter {
+  color: #ec5f67;
+}
+.markup.changed.git_gutter {
+  color: #ffcf1b;
+}
+.markup.inserted.git_gutter {
+  color: #c3e88d;
+}
+.markup.ignored.git_gutter {
+  color: #546e7a;
+}
+.comment.line.double-slash .punctuation.definition.comment,
+.meta.structure.array .comment.block.json .punctuation.definition.comment {
+  color: #49656f;
+}
+.support.type.property-name {
+  color: #80cbc4;
+}
+.meta.property-list .meta.property-name {
+  color: #80cbc4;
+}
+.source.css .keyword.other.unit,
+.source.less .keyword.other.unit,
+.source.scss .keyword.other.unit,
+.source.sass .keyword.other.unit {
+  color: #ffeb95;
+}
+.entity.other.less.mixin {
+  color: #7986cb;
+}
+.constant.other.color.rgb-value .punctuation.definition.constant {
+  color: #ee6f65;
+}
+.meta.attribute-selector .string.unquoted.attribute-value {
+  color: #c3e88d;
+}
+.meta.attribute-selector .entity.other.attribute-name.attribute {
+  color: #ee6f65;
+}
+.bracket-matcher .region {
+  border-bottom: 1px solid #4db6ac;
+  box-sizing: border-box;
+  background-color: #364850;
+  box-shadow: inset 0 -1px 0 #4db6ac;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><h1 id="league-mgr">League-Mgr</h1>
+<p>Server based on nodejs, koa(web framework), mongoose(ORM for mongo) supporting</p>
+<ul>
+<li>REST : client/server communication</li>
+<li>JWT : JsonWebToken for admin authentication</li>
+</ul>
+<h2 id="live-example-on-localhost-9995-">Live Example on <em>localhost:9995</em></h2>
+<h2 id="specs">Specs</h2>
+<ul>
+<li>Public APIs: Expose Public APIs to get the following info</li>
+<li>List of upcoming games
+curl -i &quot;<a href="http://localhost:9995/v1/league/5697d05d920eb16b4f2bc4f3/games?gametime=n">http://localhost:9995/v1/league/5697d05d920eb16b4f2bc4f3/games?gametime=n</a>&quot;</li>
+<li>List of past games
+curl -i &quot;<a href="http://localhost:9995/v1/league/5697d05d920eb16b4f2bc4f3/games?gametime=p">http://localhost:9995/v1/league/5697d05d920eb16b4f2bc4f3/games?gametime=p</a>&quot;</li>
+<li>List of Teams
+curl -i &quot;<a href="http://localhost:9995/v1/league/5697d05d920eb16b4f2bc4f3/teams">http://localhost:9995/v1/league/5697d05d920eb16b4f2bc4f3/teams</a>&quot;</li>
+<li>Team Info
+curl -i &quot;<a href="http://localhost:9995/v1/team/5697d05e920eb16b4f2bc503">http://localhost:9995/v1/team/5697d05e920eb16b4f2bc503</a>&quot;</li>
+</ul>
+<p>added</p>
+<ul>
+<li><p>list of leagues : /v1/league?season=<year></year></p>
+<ul>
+<li>by default, current season is assumed
+curl -i &quot;<a href="http://localhost:9995/v1/league?season=2015">http://localhost:9995/v1/league?season=2015</a>&quot;</li>
+</ul>
+</li>
+<li><p>Admin APIs: Expose Admin APIs to get the following info</p>
+</li>
+</ul>
+<p>Please refer to the &#39;Testing&#39; section for admin operations</p>
+<ul>
+<li><p>Create/Update/Delete Tournament : /v1/league CRUD</p>
+<ul>
+<li>cascade delete games, teams if league is deleted</li>
+</ul>
+</li>
+<li><p>Create/Update/Delete Games  : /v1/league/<league-id>/game, /v1/game/<game-id> CRUD</game-id></league-id></p>
+<ul>
+<li>check for league id validity during creation/updation</li>
+<li>check for team league equality with game league validity during creation/updation</li>
+<li>delete teamname updation through game updation</li>
+</ul>
+</li>
+<li><p>Create/Update/Delete Teams  : /v1/league/<league-id>/team, /v1/team/<team-id> CRUD</team-id></league-id></p>
+<ul>
+<li>check for league id validity during creation/updation</li>
+<li>update team name in game docs during team updation</li>
+<li>delete games if team is deleted</li>
+</ul>
+</li>
+<li><p>populate league info</p>
+</li>
+<li>Build a simple Server Side Batch Job to Read and populate Barclays Premier League or any other league tournament info feel free to use any available public data, or perform web scraping<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>#&nbsp;&nbsp;using&nbsp;data&nbsp;from&nbsp;</span><span class="markup underline link http hyperlink"><span>http://www.football-data.co.uk/englandm.php</span></span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>#&nbsp;&nbsp;football-data.org&nbsp;:&nbsp;X-Auth-Token:&nbsp;75e849c09ea84724a4f30043b52e08e2</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>./script/insertLeague.js&nbsp;-y&nbsp;2015</span></span></span></div></pre></li>
+</ul>
+<p>TODO : automated testing</p>
+<h2 id="running">Running</h2>
+<h3 id="server">server</h3>
+<pre class="editor-colors lang-bash"><div class="line"><span class="source shell"><span class="comment line number-sign shell"><span class="punctuation definition comment shell"><span>#</span></span><span>&nbsp;edit&nbsp;server/config/config.js</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source shell"><span>node&nbsp;app.js</span></span></div></pre>
+<h2 id="testing">Testing</h2>
+<p>For PUT, DELETE, POST operations, admin user signin header need to be supplied. as follows:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>-H&nbsp;&#39;authorization:&nbsp;bearer&nbsp;&lt;auth-jwt&gt;&#39;</span></span></span></div></pre><p>For the same, an admin user needs to be created, as follows:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>curl&nbsp;-i&nbsp;</span><span class="markup underline link http hyperlink"><span>http://localhost:9995/v1/signup?pin=92111</span></span><span>&nbsp;-X&nbsp;POST&nbsp;-H&nbsp;&#39;content-type:application/json&#39;&nbsp;-d&nbsp;&#39;{&nbsp;&quot;name&quot;&nbsp;:&nbsp;&quot;admin&quot;,&nbsp;&quot;password&quot;&nbsp;:&nbsp;&quot;fl@123&quot;,&nbsp;&quot;phone&quot;&nbsp;:&nbsp;&quot;9711993235&quot;,&nbsp;&quot;roles&quot;&nbsp;:&nbsp;[&quot;admin&quot;]&nbsp;}&#39;</span></span></span></div></pre><p>Once created, authorization response header can be received by signing into the server, as follows:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>curl&nbsp;-i&nbsp;</span><span class="markup underline link http hyperlink"><span>http://localhost:9995/v1/signin</span></span><span>&nbsp;-X&nbsp;POST&nbsp;-H&nbsp;&#39;content-type:application/json&#39;&nbsp;-d&nbsp;&#39;{&nbsp;&quot;userId&quot;&nbsp;:&nbsp;&quot;9711993235&quot;,&nbsp;&quot;password&quot;&nbsp;:&nbsp;&quot;fl@123&quot;&nbsp;}&#39;</span></span></span></div></pre><h3 id="league">League</h3>
+<ul>
+<li><p>get</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>curl&nbsp;-i&nbsp;</span><span class="markup underline link http hyperlink"><span>http://localhost:9995/v1/league?season=2016</span></span></span></span></div></pre></li>
+<li><p>create</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>curl&nbsp;-i&nbsp;</span><span class="markup underline link http hyperlink"><span>http://localhost:9995/v1/league</span></span><span>&nbsp;-X&nbsp;POST&nbsp;-H&nbsp;&#39;content-type:application/json&#39;&nbsp;-d&nbsp;&#39;{&nbsp;&quot;name&quot;&nbsp;:&nbsp;&quot;Barclays&nbsp;Premier&nbsp;League&nbsp;2016&quot;,&nbsp;&quot;league&quot;&nbsp;:&nbsp;&quot;BPL&quot;,&nbsp;&quot;season&quot;&nbsp;:&nbsp;2016}&#39;</span></span></span></div></pre></li>
+<li><p>update</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>curl&nbsp;-i&nbsp;</span><span class="markup underline link http hyperlink"><span>http://localhost:9995/v1/league/</span></span><span>&lt;league-id&gt;&nbsp;-X&nbsp;PUT&nbsp;-H&nbsp;&#39;content-type:application/json&#39;&nbsp;-d&nbsp;&#39;{&nbsp;&quot;name&quot;&nbsp;:&nbsp;&quot;Barclays&nbsp;Premier&nbsp;League&nbsp;2016&quot;&nbsp;}&#39;</span></span></span></div></pre></li>
+<li><p>delete</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>curl&nbsp;-i&nbsp;</span><span class="markup underline link http hyperlink"><span>http://localhost:9995/v1/league/</span></span><span>&lt;league-id&gt;&nbsp;-X&nbsp;DELETE</span></span></span></div></pre></li>
+</ul>
+<h3 id="team">Team</h3>
+<ul>
+<li><p>get</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>curl&nbsp;-i&nbsp;</span><span class="markup underline link http hyperlink"><span>http://localhost:9995/v1/league/</span></span><span>&lt;league-id&gt;/teams</span></span></span></div></pre></li>
+<li><p>create</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>curl&nbsp;-i&nbsp;</span><span class="markup underline link http hyperlink"><span>http://localhost:9995/v1/league/56974bb4cf59f89b231aebc7/team</span></span><span>&nbsp;-X&nbsp;POST&nbsp;-H&nbsp;&#39;content-type:application/json&#39;&nbsp;-d&nbsp;&#39;{&nbsp;&quot;name&quot;&nbsp;:&nbsp;&quot;Manchester&nbsp;United&quot;,&nbsp;&quot;nickName&quot;&nbsp;:&nbsp;&quot;ManU&quot;,&nbsp;&quot;site&quot;&nbsp;:&nbsp;&quot;</span><span class="markup underline link http hyperlink"><span>http://www.manu.com</span></span><span>&quot;&nbsp;}&#39;</span></span></span></div></pre></li>
+<li><p>update</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>curl&nbsp;-i&nbsp;</span><span class="markup underline link http hyperlink"><span>http://localhost:9995/v1/team/</span></span><span>&lt;team-id&gt;&nbsp;-X&nbsp;PUT&nbsp;-H&nbsp;&#39;content-type:application/json&#39;&nbsp;-d&nbsp;&#39;{&nbsp;&quot;nickName&quot;&nbsp;:&nbsp;&quot;MANU&quot;&nbsp;}&#39;</span></span></span></div></pre></li>
+<li><p>delete</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>curl&nbsp;-i&nbsp;</span><span class="markup underline link http hyperlink"><span>http://localhost:9995/v1/team/56969dfd5224d439173c5f7a</span></span><span>&nbsp;-X&nbsp;DELETE</span></span></span></div></pre></li>
+</ul>
+<h3 id="game">Game</h3>
+<ul>
+<li>get
+```
+curl -i <a href="http://localhost:9995/v1/league/">http://localhost:9995/v1/league/</a><league-id>/games
+curl -i <a href="http://localhost:9995/v1/league/">http://localhost:9995/v1/league/</a><league-id>/games?gametime=p|n&amp;gamedate=<date>
+gametime
+p =&gt; past
+n =&gt; upcoming</date></league-id></league-id></li>
+</ul>
+<p>gamedate
+greater/less than the date (depending on <gametime>)
+  games are order by date descending</gametime></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta bullet-point star text"><span class="punctuation definition item text"><span>*</span></span><span>&nbsp;create</span></span></span></div></pre><p>curl -i <a href="http://localhost:9995/v1/league/56974bb4cf59f89b231aebc7/game">http://localhost:9995/v1/league/56974bb4cf59f89b231aebc7/game</a> -X POST -H &#39;content-type:application/json&#39; -d &#39;{ &quot;date&quot; : &quot;2016/01/16 20:00:00&quot;, &quot;homeTeamId&quot; : &quot;569753bda6b8385c27bc45ed&quot;, &quot;awayTeamId&quot; : &quot;569756afd378653f286d5fde&quot; }&#39;</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta bullet-point star text"><span class="punctuation definition item text"><span>*</span></span><span>&nbsp;update</span></span></span></div></pre><p>curl -i <a href="http://localhost:9995/v1/game/">http://localhost:9995/v1/game/</a><game-id> -X PUT -H &#39;content-type:application/json&#39; -d &#39;{ &quot;date&quot; : &quot;2016/02/17&quot; }&#39;</game-id></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta bullet-point star text"><span class="punctuation definition item text"><span>*</span></span><span>&nbsp;delete</span></span></span></div></pre><p>curl -i <a href="http://localhost:9995/v1/game/">http://localhost:9995/v1/game/</a><game-id> -X DELETE</game-id></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>###&nbsp;User</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>*&nbsp;Add&nbsp;a&nbsp;user</span></span></span></div></pre><p>curl -i <a href="http://localhost:9995/v1/signup?pin=92111">http://localhost:9995/v1/signup?pin=92111</a> -X POST -H &#39;content-type:application/json&#39; -d &#39;{ &quot;name&quot; : &quot;admin&quot;, &quot;password&quot; : &quot;fl@123&quot;, &quot;phone&quot; : &quot;9711993235&quot;, &quot;roles&quot; : [&quot;admin&quot;] }&#39;</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta bullet-point star text"><span class="punctuation definition item text"><span>*</span></span><span>&nbsp;sign&nbsp;in&nbsp;using&nbsp;the&nbsp;created&nbsp;user</span></span></span></div></pre><p>curl -i <a href="http://localhost:9995/v1/signin">http://localhost:9995/v1/signin</a> -d &#39;{ &quot;userId&quot; : &quot;9711993235&quot;, &quot;password&quot; : &quot;fl@123&quot; }&#39; -X POST -H &#39;Content-Type:application/json&#39;</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta bullet-point star text"><span class="punctuation definition item text"><span>*</span></span><span>&nbsp;signout</span></span></span></div></pre><p>curl -i <a href="http://localhost:9995/v1/signout">http://localhost:9995/v1/signout</a>  (secured)</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta bullet-point star text"><span class="punctuation definition item text"><span>*</span></span><span>&nbsp;Update&nbsp;a&nbsp;user.&nbsp;In&nbsp;url&nbsp;provide&nbsp;Object&nbsp;id&nbsp;of&nbsp;user&nbsp;as&nbsp;returned&nbsp;in&nbsp;response&nbsp;by&nbsp;server&nbsp;while&nbsp;user&nbsp;creation.</span></span></span></div></pre><p>curl -i <a href="http://localhost:9995/v1/user?pin=92111">http://localhost:9995/v1/user?pin=92111</a> -d &#39;{ &quot;password&quot; : &quot;ah@123&quot; }&#39; -X PUT -H &#39;content-type: application/json&#39;</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta bullet-point star text"><span class="punctuation definition item text"><span>*</span></span><span>&nbsp;Delete&nbsp;a&nbsp;user.&nbsp;In&nbsp;url&nbsp;provide&nbsp;object&nbsp;id&nbsp;of&nbsp;user&nbsp;as&nbsp;returned&nbsp;in&nbsp;response&nbsp;by&nbsp;server&nbsp;while&nbsp;user&nbsp;creation.</span></span></span></div></pre><p>curl -i <a href="http://localhost:9995/v1/user">http://localhost:9995/v1/user</a> -X DELETE
+curl -i <a href="http://localhost:9995/v1/user/">http://localhost:9995/v1/user/</a><userid> -X DELETE</userid></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>##&nbsp;Debug&nbsp;the&nbsp;server</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>launch&nbsp;it&nbsp;as&nbsp;follows:</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>```bash</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>node-debug&nbsp;app.js</span></span></span></div></pre><h2 id="batch-job-to-populate-league-data">batch job to populate league data</h2>
+<p><em>populate barclays data</em></p>
+<pre class="editor-colors lang-bash"><div class="line"><span class="source shell"><span>node&nbsp;scripts/insertBPL.js</span></span></div></pre>
+<h2 id="code-layout">Code layout</h2>
+<h3 id="config">config</h3>
+<p>./server/config/config.js</p>
+<h3 id="middleware-config">middleware config</h3>
+<p>./server/config/koa.js</p>
+<h3 id="data-models">Data models</h3>
+<p>refer ./fl-common/models</p>
+<h3 id="controllers">controllers</h3>
+<p>refer ./server/controllers</p>
+<h2 id="credits">Credits</h2>
+<p>Server side simply utilizes generally accepted Koa middleware and Node.js best practices.</p>
+<h2 id="the-name">The Name</h2>
+<p>The project name is League Mgr</p>
+<h2 id="license">License</h2>
+<p>Copyright, Amit Handa</p></body>
+</html>

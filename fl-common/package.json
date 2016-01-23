@@ -1,0 +1,42 @@
+{
+  "name": "fl-common",
+  "version": "0.1.0",
+  "private": true,
+  "description": "football league common module",
+  "homepage": "<none>",
+  "license": "Copyright, Amit handa",
+  "author": {
+    "name": "ah",
+    "email": "amit.handa@gmail.com",
+    "url": ""
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+  },
+  "dependencies": {
+    "bcrypt": "0.8.x",
+
+    "bunyan": "~1",
+
+    "co": "~4",
+
+    "gm": "^1.18.1",
+    "image-size": "^0.3.5",
+
+    "lodash": "~3",
+
+    "mongodb": "latest",
+    "mongoose": "^4.2.7",
+
+    "request": "^2.65.0",
+
+    "turf-inside": "latest"
+  }
+}
